@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        html,
+        body {
+            background-color: rgb(104, 52, 52);
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 145px auto;
+            width: 40%;
+
+        }
+
+        tr {
+            border: 3px solid black;
+            background-color: grey;
+            color: white;
+        }
+
+        td {
+            color: black;
+        }
+
+        .titulo {
+            color: black;
+            background-color: blueviolet;
+        }
+
+        th {
+            background-color: rgb(95, 95, 218);
+            border: 1px solid black
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <table border="1" class="formulario">
+            <tr>
+                <th class=titulo colspan="2">FORMULARIO CADASTRO</th>
+            </tr>
+            <tr>
+                <th colspan="2">NOME</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" name="txtnome" id="nome">
+                </td>
+            </tr>
+            <tr>
+                <th>IDADE</th>
+                <th>SEXO</th>
+            </tr>
+            <tr>
+                <td><input type="number" name="idade" id="idade"> </td>
+                <td><select name="select" id="sexo">
+                        <option value="Feminino">Feminino</option>
+                        <option value="Masculino">Masculino</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <th colspan="2">E-MAIL</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="email" name="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <th>CELULAR</th>
+                <th>DATA NASCIMENTO</th>
+            </tr>
+            <tr>
+                <td><input type="tel" name="telefone" id="telefone"></td>
+                <td><input type="date" name="data" id="data"></td>
+            </tr>
+            <td colspan="2"> 
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Limpar">
+            </td>
+
+        </table>
+    </form>
+</body>
+
+</html>
